@@ -8,6 +8,7 @@ I thought I would do following exactly the guidelines and the design, but I thou
 _"this is horrible and so simple... well, I'll add some extra stuff"_. 
 At the end the final result is rather different than the original one, but it is much better.
 
--- I'll put a picture of the original one here
+![Screenshot 2024-06-22 003753](https://github.com/KevinFlores26/Foro2-staticWebsite/assets/115028757/d6155848-ccbc-4191-b795-2221ef00beec)
+-- Original version --
 
 This time I tried to follow good practices and methodologies as BEM and a simple structure ordered by file types and modules.
