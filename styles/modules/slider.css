@@ -1,0 +1,53 @@
+.main-container__main {
+  position: relative;
+  flex-basis: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.main__home,
+.main__about,
+.main__services {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  padding: 3rem 5rem;
+  transition: 
+    left 0.6s ease, 
+    transform 0.6s ease-out,
+    opacity 0.4s,
+    transform-scale 0.4s;
+}
+
+.main__home.--active,
+.main__about.--active,
+.main__services.--active {
+  top: 0;
+  left: 0;
+  transform: translateX(0) scale(1);
+  opacity: 1;
+}
+
+.main__home:not(.--active),
+.main__home:not(.--active) + .main__about:not(.--active)  {
+  left: -100%;
+  transform: translateX(-100%) scale(0.4);
+  opacity: 0;
+}
+
+.main__about:not(.--active) {
+  left: 100%;
+  transform: translateX(100%) scale(0.4);
+  opacity: 0;
+}
+
+.main__services:not(.--active) {
+  left: 200%;
+  transform: translateX(100%) scale(0.4);
+  opacity: 0;
+}

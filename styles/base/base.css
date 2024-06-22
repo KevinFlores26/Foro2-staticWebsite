@@ -1,0 +1,23 @@
+/* 
+* Main base styles imported below
+* Then exported in main CSS file
+*/
+
+@import url('./reset.css');
+@import url('./typography.css');
+@import url('./colors.css');
+
+::selection {
+  background-color: var(--color-primary-accent);
+  color: var(--color-primary-bg);
+}
+
+html:not([data-theme='light']) img[src$='.svg'] {
+  filter: invert(100%);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}

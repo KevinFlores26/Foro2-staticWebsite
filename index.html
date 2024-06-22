@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kevin Brian Flores Hernández" />
+    <meta
+      name="description"
+      content="Second forum of Web Development - Develop a static webpage with HTML and CSS (Yeah, I added some extra stuff lol)"
+    />
+
+    <title data-lang="title-tag">II Foro - Desarrollo Web</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 data-lang="header">Bienvenido a nuestro foro informático</h1>
+
+      <div class="header__settings">
+        <input type="checkbox" id="theme-input" class="settings__input" />
+        <label for="theme-input" class="settings__switch">
+          <span data-lang="theme-label">Tema</span>
+          <span data-lang="current-theme-light">Claro</span>
+          <span data-lang="current-theme-dark">Oscuro</span>
+        </label>
+
+        <input type="checkbox" id="lang-input" class="settings__input" />
+        <label for="lang-input" class="settings__switch">
+          <span data-lang="lang-label">Idioma</span>
+          <span data-lang="current-lang">Español</span>
+        </label>
+      </div>
+    </header>
+    <nav class="nav">
+      <ul class="nav__menu">
+        <li class="menu__link">
+          <a data-lang="home" href="#home">Inicio</a>
+        </li>
+        <li class="menu__link">
+          <a data-lang="about" href="#about">Acerca de</a>
+        </li>
+        <li class="menu__link">
+          <a data-lang="services" href="#services">Servicios</a>
+        </li>
+        <li class="menu__link">
+          <a data-lang="another-web" href="./pages/second-web.html">Otra web</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="main-container">
+      <main class="main-container__main">
+        <section class="main__home --section --active">
+          <h2 data-lang="home" class="home__title --medium-text">Inicio</h2>
+
+          <div class="home__articles">
+            <article class="articles__home-card">
+              <img
+                src="./images/picture.svg"
+                alt="Sample illustration for Not Found"
+              />
+
+              <div class="home-card__content-card">
+                <h3>Lorem, ipsum.</h3>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Atque, autem illo sit nobis eos reiciendis sint voluptatibus
+                  fugit tenetur quidem, repudiandae debitis dolorem laborum,
+                  eius earum ipsam quia culpa architecto.
+                </p>
+
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Totam nulla nesciunt rem est id neque maxime doloremque
+                  consectetur minus reprehenderit ex, recusandae aliquam libero,
+                  sunt suscipit ipsum odit deleniti illo!
+                </p>
+              </div>
+            </article>
+
+            <article class="articles__home-card">
+              <img
+                src="./images/picture.svg"
+                alt="Sample illustration for Not Found"
+              />
+
+              <div class="home-card__content-card">
+                <h3>Lorem, ipsum.</h3>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Atque, autem illo sit nobis eos reiciendis sint voluptatibus
+                  fugit tenetur quidem, repudiandae debitis dolorem laborum,
+                  eius earum ipsam quia culpa architecto.
+                </p>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Atque, autem illo sit nobis eos reiciendis sint...
+                </p>
+                <a data-lang="read-more" href="#">Leer más</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="main__about --section">
+          <h2 data-lang="about" class="about__title --medium-text">
+            Acerca de
+          </h2>
+
+          <div class="about__content">
+            <div class="content__header">
+              <img
+                src="./images/picture.svg"
+                alt="Sample illustration for Not Found"
+              />
+              <h3>Lorem, ipsum dolor.</h3>
+            </div>
+
+            <article class="content__article">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                illum explicabo maiores molestiae enim quia, cumque maxime velit
+                excepturi animi deserunt expedita modi distinctio. Voluptatem
+                suscipit assumenda voluptate similique tempore? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Reiciendis possimus
+                explicabo ipsa aspernatur. Nemo illum odit alias tenetur eius,
+                laudantium quaerat, earum aperiam vitae molestiae labore
+                accusamus quisquam rem quidem.
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                illum explicabo maiores molestiae enim quia
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                illum explicabo maiores molestiae enim quia, cumque maxime velit
+                excepturi animi deserunt
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="main__services --section">
+          <h2 data-lang="services" class="services__title --medium-text">
+            Servicios
+          </h2>
+
+          <div class="services__articles">
+            <article class="articles__service-card">
+              <div class="service-card__header">
+                <img
+                  src="./images/picture.svg"
+                  alt="Sample illustration for Not Found"
+                />
+                <h3>Lorem, ipsum.</h3>
+              </div>
+
+              <p class="service-card__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                incidunt, cumque, molestiae quaerat reiciendis temporibus
+                placeat perspiciatis sequi ab tenetur aperiam totam vero ut
+                illum architecto? Et quis qui provident.
+              </p>
+            </article>
+
+            <article class="articles__service-card">
+              <div class="service-card__header">
+                <img
+                  src="./images/picture.svg"
+                  alt="Sample illustration for Not Found"
+                />
+                <h3>Lorem, ipsum.</h3>
+              </div>
+
+              <p class="service-card__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                quo dignissimos dolores necessitatibus iusto saepe quas iste
+                recusandae molestias numquam? Architecto porro reiciendis ullam
+                quidem! Architecto, molestias? Nam, eos minima!
+              </p>
+            </article>
+
+            <article class="articles__service-card">
+              <div class="service-card__header">
+                <img
+                  src="./images/picture.svg"
+                  alt="Sample illustration for Not Found"
+                />
+                <h3>Lorem, ipsum.</h3>
+              </div>
+
+              <p class="service-card__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis qui, illum hic quam vel iure, voluptates sequi
+                voluptatum reiciendis officiis numquam modi quia natus tempora
+                dolorem obcaecati harum quidem dolorum?
+              </p>
+            </article>
+
+            <article class="articles__service-card">
+              <div class="service-card__header">
+                <img
+                  src="./images/picture.svg"
+                  alt="Sample illustration for Not Found"
+                />
+                <h3>Lorem, ipsum.</h3>
+              </div>
+
+              <p class="service-card__content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
+                sequi soluta perferendis porro ullam excepturi mollitia unde
+                eaque dolore aliquid odio, voluptatum modi perspiciatis
+                distinctio dolorem, magnam accusantium quibusdam nisi?
+              </p>
+            </article>
+
+            <article class="articles__service-card">
+              <div class="service-card__header">
+                <img
+                  src="./images/picture.svg"
+                  alt="Sample illustration for Not Found"
+                />
+                <h3>Lorem, ipsum.</h3>
+              </div>
+
+              <p class="service-card__content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Recusandae voluptatibus, soluta quibusdam consequatur nisi fuga
+                eligendi nulla, repudiandae quo similique praesentium eos nobis.
+                Sunt, magnam. Obcaecati, reprehenderit. Alias, quidem tempore.
+              </p>
+            </article>
+
+            <article class="articles__service-card">
+              <div class="service-card__header">
+                <img
+                  src="./images/picture.svg"
+                  alt="Sample illustration for Not Found"
+                />
+                <h3>Lorem, ipsum.</h3>
+              </div>
+
+              <p class="service-card__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus error explicabo, asperiores rem beatae minus ratione
+                consequuntur libero necessitatibus, laborum dolorem veritatis
+                cumque quod illum, facere eius impedit praesentium nostrum.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <aside class="main-container__aside-news">
+        <h3 data-lang="aside-news" class="aside-news__title">Noticias</h3>
+
+        <div class="aside-news__news-articles">
+          <article class="news-articles__article-card">
+            <img
+              src="./images/picture.svg"
+              alt="Sample illustration for Not Found"
+            />
+
+            <div class="article-card__content-card">
+              <h3>Lorem, ipsum.</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+                autem illo sit...
+              </p>
+              <a data-lang="read-more" href="#">Leer más</a>
+            </div>
+          </article>
+
+          <article class="news-articles__article-card">
+            <img
+              src="./images/picture.svg"
+              alt="Sample illustration for Not Found"
+            />
+
+            <div class="article-card__content-card">
+              <h3>Lorem, ipsum.</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestiae, rerum! Sed, totam dolores...
+              </p>
+              <a data-lang="read-more" href="#">Leer más</a>
+            </div>
+          </article>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="footer">
+      <h3 class="footer__title --medium-text">
+        <i data-lang="footer-header">Pie de página</i>
+      </h3>
+      <p data-lang="footer-text" class="footer__copyright">
+        Copyright 2024 - &COPY; Kevin Brian Flores Hernández
+      </p>
+    </footer>
+
+    <script type="module" src="./js/index.mjs"></script>
+  </body>
+</html>

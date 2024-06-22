@@ -1,0 +1,95 @@
+@import url("./base/base.css");
+@import url("./layout/layout.css");
+
+.main-container {
+  display: flex;
+  align-items: center;
+  gap: 7.5rem;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0 15rem;
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 12.5rem;
+  transform: translateY(-50%);
+  display: block;
+  aspect-ratio: 1 / 1;
+  width: 25rem;
+  background-color: var(--color-card-bg);
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.main-container > img {
+  width: 20rem;
+}
+
+.main-container__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content__aboutme {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-card-bg);
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+}
+
+.content__aboutme strong {
+  font-weight: 600;
+}
+
+.content__aboutme > h2 {
+  margin-bottom: 1rem;
+}
+
+.content__aboutme > p:nth-child(3) {
+  margin-bottom: 0.5rem;
+}
+
+.content__more-aboutme {
+  display: flex;
+  gap: 1rem;
+}
+
+.more-aboutme__hobbies,
+.more-aboutme__technologies {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: var(--color-card-bg);
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+}
+
+.more-aboutme__hobbies > h3,
+.more-aboutme__technologies > h3 {
+  margin-bottom: 1rem;
+}
+
+.more-aboutme__hobbies ul, 
+.more-aboutme__technologies ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.more-aboutme__hobbies li, 
+.more-aboutme__technologies li {
+  list-style: outside;
+  z-index: 1;
+}
+
+.technologies__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

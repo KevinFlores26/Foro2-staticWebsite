@@ -1,0 +1,51 @@
+/*
+* Color Themes - Light by default
+* Light color palette from "Clase #5 > Clase práctica.pdf" using color picker, Dark color palette by me 
+* Preferred color models: HEX (for static colors), RGB and RGBA (for transparencies)
+*/
+
+:root {
+  /* Static colors */
+  --white: #fff;
+  --black: #000;
+  --gray: #e0e0e0;
+
+  /* HEX colors */
+  --color-header: #2c5a4c;
+  --color-navbar: #333333;
+  --color-navbar-border-bottom: #052836;
+  --color-content: #222291;
+  --color-news: #99055b;
+  --color-footer: #000000;
+  --color-background: #a9a9a9;
+  --color-text: #1d130f;
+  --color-active: #4caf50;
+  --color-neutral: #fff;
+  --color-card-bg: #f5f6f8;
+
+  /* Negative colors */
+  --ng-color-text: #e2ecf0;
+
+  /* RGB components */
+  --rgb-color-neutral: 255, 255, 255;
+}
+
+[data-theme="dark"] {
+  --color-header: #0e6142;
+  --color-navbar: #202020;
+  --color-navbar--border-bottom: #044761;
+  --color-content: #0f0fa3;
+  --color-news: #bf0973;
+  --color-footer: #6d6767;
+  --color-background: #161718;
+  --color-text: #e2ecf0;
+  --color-active: #2fcc34;
+  --color-neutral: #000;
+  --color-card-bg: #202020;
+
+  /* Negative colors */
+  --ng-color-text: #1d130f;
+
+  /* RGB components */
+  --rgb-color-neutral: 0, 0, 0;
+}

@@ -1,0 +1,66 @@
+/* Reset Base Styles */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  transition: 
+    background-color 0.2s ease,
+    color 0.1s;
+}
+
+html {
+  scroll-behavior: none;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  display: block;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  hyphens: auto;
+}

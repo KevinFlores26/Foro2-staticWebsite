@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kevin Brian Flores Hernández" />
+    <meta
+      name="description"
+      content="Second webpage of the second forum of Web Development (more extra stuff, I guess)"
+    />
+    <title data-lang="another-web-title">Mi segunda página web</title>
+
+    <link rel="stylesheet" href="../styles/second-web.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 data-lang="another-web-title">Mi segunda página web</h1>
+
+      <div class="header__settings">
+        <input type="checkbox" id="theme-input" class="settings__input" />
+        <label for="theme-input" class="settings__switch">
+          <span data-lang="theme-label">Tema</span>
+          <span data-lang="current-theme-light">Claro</span>
+          <span data-lang="current-theme-dark">Oscuro</span>
+        </label>
+
+        <input type="checkbox" id="lang-input" class="settings__input" />
+        <label for="lang-input" class="settings__switch">
+          <span data-lang="lang-label">Idioma</span>
+          <span data-lang="current-lang">Español</span>
+        </label>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <img src="../images/picture.svg" alt="Sample illustration for Not Found" />
+
+      <div class="main-container__content">
+        <article class="content__aboutme">
+          <h2 data-lang="who-am-i">¿Quién soy?</h2>
+          <p>
+            <strong>
+              Me llamo Kevin Flores, soy un desarrollador web Junior.
+            </strong>
+            <br>
+            Desde muy pequeño me interesó la tecnología y todo lo relacionado a
+            ella, aparte de los autos y mi pasión hacia los videojuegos.
+          </p>
+
+          <p>
+            Mis gustos han marcado mi camino profesional, puesto que comencé a
+            aprender programación justamente por eso, porque me apasiona.
+          </p>
+
+          <p>
+            <strong>
+              ¡Claro esto solo es el comienzo!
+            </strong>
+            <br>
+            Pues no dejo de lado mi sueño de algún día desarrollar un videojuego, sin embargo, aún tengo un
+            camino largo que recorrer.
+          </p>
+        </article>
+
+        <div class="content__more-aboutme">
+          <article class="more-aboutme__hobbies">
+            <h3 data-lang="hobbies">Mis hobbies</h3>
+            <ul>
+              <li>Suelo jugar videojuegos con mis amigos</li>
+              <li>Escuchar música &lpar;nada de reguetón&rpar;</li>
+              <li>Me gusta estar al tanto de los temas que me interesan</li>
+              <li>Suelo ver videos en YouTube, algunas series y animes</li>
+              <li>
+                Ejercito mi lógica de programación durante mis tiempos libres
+              </li>
+            </ul>
+          </article>
+  
+          <article class="more-aboutme__technologies">
+            <h3 data-lang="technologies">Tecnologías que suelo usar</h3>
+            
+            <div class="technologies__list">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SASS &lpar;SCSS&rpar;</li>
+                <li>JavaScript</li>
+                <li>Astro</li>
+                <li>Git</li>
+                <li>Figma</li>
+              </ul>
+    
+              <ul>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Fundamentos de SQL</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <h3 class="footer__title --medium-text">
+        <i>
+          <span data-lang="made-by">
+            Hecho por: 
+          </span>
+          Kevin Brian Flores Hernández
+        </i>
+      </h3>
+    </footer>
+
+    <script type="module" src="../js/second-web.mjs"></script>
+  </body>
+</html>
