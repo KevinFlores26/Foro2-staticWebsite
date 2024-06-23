@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+i {
+  font-style: italic;
+}
+
 /* Media queries */
 @media (max-width: 1500px) {
   html {
