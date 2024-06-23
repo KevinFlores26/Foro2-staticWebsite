@@ -16,7 +16,11 @@
   "footer-text": "Todos los derechos reservados 2024 - Kevin Brian Flores Hernández",
   "another-web-title": "Mi segunda página web",
   "who-am-i": "¿Quién soy?",
+  "introduction-part1": "<strong>Me llamo Kevin Flores, soy un desarrollador web Junior.</strong><br>Desde muy pequeño me interesó la tecnología y todo lo relacionado a ella, aparte de los autos, la ciencia y mi pasión hacia los videojuegos.",
+  "introduction-part2": "Mis gustos han marcado mi camino profesional, puesto que comencé a aprender programación justamente por eso, porque me apasiona.",
+  "introduction-part3": "<strong>¡Claro, esto solo es el comienzo!</strong><br>Pues no dejo de lado mi sueño de algún día desarrollar un videojuego, sin embargo, más de mi camino se ha cortado.",
   "hobbies": "Mis hobbies",
+  "hobbies-list": "<li>Suelo jugar videojuegos con mis amigos</li><li>Escuchar música &lpar;nada de reguetón&rpar;</li><li>Me gusta estar al tanto de los temas que me interesan</li><li>Suelo ver videos en YouTube, algunas series y animes</li><li>Ejercito mi lógica de programación durante mis tiempos libres</li><li>Me encanta estar a solas y pensar sobre mi futuro, mis metas y como puedo alcanzarlas &lpar;sobre todo cuando escucho música&rpar;.</li>",
   "technologies": "Tecnologías que suelo usar",
   "made-by": "Hecho por:"
 }

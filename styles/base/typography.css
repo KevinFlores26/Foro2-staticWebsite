@@ -99,3 +99,7 @@ small,
   font-weight: 400;
   letter-spacing: 0;
 }
+
+p, strong, small, span, li {
+  text-wrap: pretty;
+}

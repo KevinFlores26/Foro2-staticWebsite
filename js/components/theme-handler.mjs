@@ -1,4 +1,7 @@
 export function loadTheme(inputSwitch) {
+  // @param {string} inputSwitch - ID of the input switch
+  // Request the preferred color scheme and set the theme accordingly
+
   const preferredColorScheme = window.matchMedia("(prefers-color-scheme: dark)")
     .matches
     ? "dark"
@@ -11,8 +14,10 @@ export function loadTheme(inputSwitch) {
 
   setTheme(localStorage.getItem("theme") || preferredColorScheme || "light");
 
+  // Keep the previous state of the switch
   const input = document.getElementById(inputSwitch);
   if (!input) {
+    console.error("Input switch not found");
     return;
   }
 
@@ -22,8 +27,12 @@ export function loadTheme(inputSwitch) {
 }
 
 export function toggleTheme(inputSwitch) {
+  // @param {string} inputSwitch - ID of the input switch
+  // Adds the event listener to the input switch to toggle the theme
+
   const input = document.getElementById(inputSwitch);
   if (!input) {
+    console.error("Input switch not found");
     return;
   }
 

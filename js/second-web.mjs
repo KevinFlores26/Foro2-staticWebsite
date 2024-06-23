@@ -4,6 +4,7 @@ import { loadLang, toggleLang } from "./components/lang-handler.mjs";
 loadTheme("theme-input");
 
 window.addEventListener("load", () => {
+  // Setting up the translations
   const translations = {
     en: "/lang/en.json",
     es: "/lang/es.json",
@@ -25,10 +26,13 @@ window.addEventListener("load", () => {
     } else if (preferredLang === "es" || localStorage.getItem("lang") === "es") {
       return langs[1][1];
     }
+
+    return langs[0][1];
   }
 
   loadLang(translationFallback(), localeFallback, "lang-input");
   toggleLang(langs[0], langs[1], "lang-input");
 
+  // Add the event listener to the input switch to toggle the theme
   toggleTheme("theme-input");
 });

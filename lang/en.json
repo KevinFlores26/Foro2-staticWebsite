@@ -16,7 +16,11 @@
   "footer-text": "Copyright 2024 - Kevin Brian Flores Hernández",
   "another-web-title": "My second web",
   "who-am-i": "Who am I?",
+  "introduction-part1": "<strong>I'm Kevin Flores, a Junior Web Developer.</strong><br>Since my childhood years I have been interested in technology and everything related to it, apart from cars, science and my passion for gaming.",
+  "introduction-part2": "My hobbies have made my profesional path more interesting, so I started learning programming justly because of that, because I'm passionate about it.",
+  "introduction-part3": "<strong>So, that's just the beginning!</strong><br>Given that I won't give up my dream about some day to developing a videogame, but I still have a long way to go.",
   "hobbies": "My hobbies",
+  "hobbies-list": "<li>I play videogames with my friends</li><li>Listen to music &lpar;nothing of reggaeton&rpar;</li><li>I like stay up to date with the topics that interest me</li><li>I often watch videos on YouTube, some series and animes</li><li>Learn programming during my free time</li><li>I love being alone and think about my future, my goals and how to achieve them &lpar;especially when I listen to music&rpar;</li>",
   "technologies": "Technologies I use",
   "made-by": "Made by:"
 }
