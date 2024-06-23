@@ -5,9 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   vertical-align: baseline;
-  transition: 
-    background-color 0.2s ease,
-    color 0.1s;
+  transition: background-color 0.2s ease, color 0.1s;
 }
 
 html {
@@ -21,7 +19,9 @@ iframe,
 figure {
   max-width: 100%;
   display: block;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center center;
   object-position: center center;
 }
 
@@ -62,5 +62,7 @@ label {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto;
 }

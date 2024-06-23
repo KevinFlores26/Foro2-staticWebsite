@@ -1,36 +1,137 @@
 @import url("./base/base.css");
 @import url("./layout/layout.css");
+@import url("./modules/background.css");
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10rem;
+  background-color: var(--color-header);
+}
+
+.header__home-link {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.header__home-link:active {
+  transform: translateY(-50%) scaleY(0.8) scaleX(0.9);
+}
+
+.header__home-link::before,
+.header__home-link::after {
+  content: "";
+  position: absolute;
+  top: 0.9rem;
+  left: 0.3rem;
+  transform-origin: left;
+  transform: rotate(-35deg);
+  display: block;
+  aspect-ratio: 5 / 1;
+  width: 80%;
+  background-color: var(--white);
+  border-radius: 3rem;
+  z-index: 1;
+  transition: left 0.3s ease, transform 0.3s ease;
+}
+
+.header__home-link::after {
+  top: 0.8rem;
+  transform: rotate(35deg);
+}
+
+.header__home-link:hover::before {
+  left: -0.4rem;
+  transform: scaleX(0.8) rotate(-35deg);
+}
+
+.header__home-link:hover::after {
+  left: -0.4rem;
+  transform: scaleX(0.8) rotate(35deg);
+}
+
+.header__home-link span {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  width: 10%;
+  height: 100%;
+  overflow: hidden;
+  transition: left 0.3s ease, width 0.1s ease;
+}
+
+.header__home-link:hover span {
+  left: 1.5rem;
+  width: 250%;
+}
+
+.header__home-link p {
+  position: absolute;
+  top: 50%;
+  left: -6rem;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--white);
+  opacity: 0;
+  transition: left 0.3s ease, opacity 0.15s ease;
+}
+
+.header__home-link:hover p {
+  left: 0;
+  opacity: 1;
+}
 
 .main-container {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 7.5rem;
+  gap: 5rem;
   flex-grow: 1;
   width: 100%;
   padding: 0 15rem;
 }
 
-.main-container::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 12.5rem;
-  transform: translateY(-50%);
-  display: block;
-  aspect-ratio: 1 / 1;
-  width: 25rem;
-  background-color: var(--color-card-bg);
+.main-container__picture-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 20rem;
+  background-color: rgba(var(--rgb-color-card-bg), 0.5);
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
   border-radius: 1rem;
-  z-index: -1;
+  -webkit-clip-path: circle(0% at 100% 50%);
+  clip-path: circle(0% at 100% 50%);
+  transition: -webkit-clip-path 1s ease 1s;
+  transition: clip-path 1s ease 1s;
+  transition: clip-path 1s ease 1s, -webkit-clip-path 1s ease 1s;
 }
 
-.main-container > img {
-  width: 20rem;
+.main-container__picture-frame.--showing {
+  -webkit-clip-path: circle(110% at 100% 50%);
+  clip-path: circle(110% at 100% 50%);
+}
+
+.main-container__picture-frame > img {
+  width: 80%;
 }
 
 .main-container__content {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   gap: 1rem;
 }
 
@@ -74,7 +175,7 @@
   margin-bottom: 1rem;
 }
 
-.more-aboutme__hobbies ul, 
+.more-aboutme__hobbies ul,
 .more-aboutme__technologies ul {
   position: relative;
   display: flex;
@@ -82,7 +183,7 @@
   gap: 0.5rem;
 }
 
-.more-aboutme__hobbies li, 
+.more-aboutme__hobbies li,
 .more-aboutme__technologies li {
   list-style: outside;
   z-index: 1;
@@ -92,4 +193,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Media Queries */
+@media (max-width: 1850px) {
+  .main-container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 80%;
+  }
+
+  .main-container {
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 60%;
+  }
+
+  .main-container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  .content__more-aboutme {
+    flex-direction: column;
+  }
 }

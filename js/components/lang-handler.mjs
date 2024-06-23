@@ -1,3 +1,5 @@
+import { adaptTabIndicator } from "./tab-indicator.mjs";
+
 function updateContent(translations, locale, inputSwitch) {
   // @param {Object} translations - Translations object
   // @param {string} locale - locale name from loadTranslations function
@@ -11,6 +13,9 @@ function updateContent(translations, locale, inputSwitch) {
 
   document.documentElement.setAttribute("lang", locale);
   localStorage.setItem("lang", locale);
+
+  // Update the properties of the tab indicator, since the language has changed
+  adaptTabIndicator("tab-indicator", null);
 
   // Keep the previous state of the switch
   if (localStorage.getItem("lang") === "en") {

@@ -18,7 +18,7 @@
   --color-news: #99055b;
   --color-footer: #000000;
   --color-background: #a9a9a9;
-  --color-text: #1d130f;
+  --color-text: #373c3e;
   --color-active: #4caf50;
   --color-neutral: #fff;
   --color-card-bg: #f5f6f8;
@@ -28,12 +28,16 @@
 
   /* RGB components */
   --rgb-color-neutral: 255, 255, 255;
+  --rgb-color-navbar-border-bottom: 5, 40, 54;
+  --rgb-color-card-bg: 245, 246, 248;
+  --rgb-ng-color-text: 226, 236, 240;
 }
 
 [data-theme="dark"] {
+  /* HEX colors */
   --color-header: #0e6142;
   --color-navbar: #202020;
-  --color-navbar--border-bottom: #044761;
+  --color-navbar-border-bottom: #044761;
   --color-content: #0f0fa3;
   --color-news: #bf0973;
   --color-footer: #6d6767;
@@ -44,8 +48,11 @@
   --color-card-bg: #202020;
 
   /* Negative colors */
-  --ng-color-text: #1d130f;
+  --ng-color-text: #373c3e;
 
   /* RGB components */
   --rgb-color-neutral: 0, 0, 0;
+  --rgb-color-navbar-border-bottom: 4, 71, 97;
+  --rgb-color-card-bg: 32, 32, 32;
+  --rgb-ng-color-text: 55, 60, 62;
 }

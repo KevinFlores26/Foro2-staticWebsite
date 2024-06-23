@@ -20,7 +20,8 @@
   "introduction-part2": "Mis gustos han marcado mi camino profesional, puesto que comencé a aprender programación justamente por eso, porque me apasiona.",
   "introduction-part3": "<strong>¡Claro, esto solo es el comienzo!</strong><br>Pues no dejo de lado mi sueño de algún día desarrollar un videojuego, sin embargo, más de mi camino se ha cortado.",
   "hobbies": "Mis hobbies",
-  "hobbies-list": "<li>Suelo jugar videojuegos con mis amigos</li><li>Escuchar música &lpar;nada de reguetón&rpar;</li><li>Me gusta estar al tanto de los temas que me interesan</li><li>Suelo ver videos en YouTube, algunas series y animes</li><li>Ejercito mi lógica de programación durante mis tiempos libres</li><li>Me encanta estar a solas y pensar sobre mi futuro, mis metas y como puedo alcanzarlas &lpar;sobre todo cuando escucho música&rpar;.</li>",
+  "hobbies-list": "<li>Suelo jugar videojuegos con mis amigos</li><li>Escuchar música &lpar;nada de reguetón&rpar;</li><li>Me gusta estar al tanto de los temas que me interesan</li><li>Suelo ver videos en YouTube, algunas series y animes</li><li>Ejercito mi lógica de programación durante mis tiempos libres</li><li>Me encanta estar a solas y pensar sobre mi futuro, mis metas y como puedo alcanzarlas &lpar;sobre todo cuando escucho música&rpar;</li>",
   "technologies": "Tecnologías que suelo usar",
+  "sql": "Conceptos de SQL",
   "made-by": "Hecho por:"
 }

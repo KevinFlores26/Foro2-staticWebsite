@@ -1,12 +1,16 @@
+import { adaptTabIndicator } from "./tab-indicator.mjs";
+
 export function sliderHandler(hashes, sectionsClass) {
   // @param {Array} hashes - Array of hashes that correspond to the sections
   // @param {String} sectionsClass - Comun class name of the sections
   // Find the current target from URL and keeps the section and nav tab active
 
   const sections = document.querySelectorAll(sectionsClass);
-  const hashTarget = window.location.hash;
+  let hashTarget = window.location.hash;
 
-  if (!sections || !hashTarget) {
+  if (hashTarget === "" || hashTarget === "#") {
+    hashTarget = "#home";
+  } else if (!sections || !hashTarget) {
     console.error("Invalid parameters from sliderHandler");
     return;
   }
@@ -30,12 +34,15 @@ export function sliderHandler(hashes, sectionsClass) {
   sections[targetIndex].classList.add("--active");
 
   // Keep active current nav tab (class="--active")
-  const currentNavTab = document.querySelector(`[href="${hashTarget}"]`);
+  const currentNavTab = document.querySelector(`[href="${hashTarget}"]`).closest("li");
   for (let i = 0; i < hashes.length; i++) {
     document
       .querySelector(`[href="${hashes[i]}"]`)
       .closest("li")
       .classList.remove("--active");
   }
-  currentNavTab.closest("li").classList.add("--active");
+  currentNavTab.classList.add("--active");
+
+  // Adapts the tab indicator to the current tab
+  adaptTabIndicator("tab-indicator", hashTarget);
 }

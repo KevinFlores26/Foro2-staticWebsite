@@ -30,7 +30,7 @@ window.addEventListener("load", () => {
   }
 
   const storagedLang = localStorage.getItem("lang");
-  const localeFallback = storagedLang || preferredLang || langs[0];
+  const localeFallback = storagedLang || preferredLang || langs[0][0];
   const translationFallback = () => {
     if (preferredLang === "en" || storagedLang === "en") {
       return langs[0][1];
@@ -53,4 +53,12 @@ window.addEventListener("load", () => {
   sliderHandler(targets, sectionClass);
 
   window.addEventListener("hashchange", () => sliderHandler(targets, sectionClass));
+
+  // Add the event listener to the input switch to toggle the sections
+  const navTabs = document.querySelectorAll(".menu__link");
+  navTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      tab.firstElementChild.click();
+    });
+  });
 });

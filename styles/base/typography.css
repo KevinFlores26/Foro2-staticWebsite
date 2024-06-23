@@ -100,6 +100,10 @@ small,
   letter-spacing: 0;
 }
 
-p, strong, small, span, li {
+p,
+strong,
+small,
+span,
+li {
   text-wrap: pretty;
 }

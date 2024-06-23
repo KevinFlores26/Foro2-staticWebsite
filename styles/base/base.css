@@ -3,16 +3,22 @@
 * Then exported in main CSS file
 */
 
-@import url('./reset.css');
-@import url('./typography.css');
-@import url('./colors.css');
+@import url("./reset.css");
+@import url("./typography.css");
+@import url("./colors.css");
+
+::-moz-selection {
+  background-color: var(--color-primary-accent);
+  color: var(--color-primary-bg);
+}
 
 ::selection {
   background-color: var(--color-primary-accent);
   color: var(--color-primary-bg);
 }
 
-html:not([data-theme='light']) img[src$='.svg'] {
+html:not([data-theme="light"]) img[src$=".svg"] {
+  -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 

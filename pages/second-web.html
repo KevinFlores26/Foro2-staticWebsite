@@ -14,6 +14,10 @@
   </head>
   <body>
     <header class="header">
+      <a href="../index.html#home" class="header__home-link">
+        <span><p data-lang="home">Inicio</p></span>
+      </a>
+
       <h1 data-lang="another-web-title">Mi segunda página web</h1>
 
       <div class="header__settings">
@@ -33,10 +37,12 @@
     </header>
 
     <main class="main-container">
-      <img
-        src="../images/picture.svg"
-        alt="Sample illustration for Not Found"
-      />
+      <div class="main-container__picture-frame" id="picture-frame">
+        <img
+          src="../images/picture.svg"
+          alt="Sample illustration for Not Found"
+        />
+      </div>
 
       <div class="main-container__content">
         <article class="content__aboutme">
@@ -103,16 +109,32 @@
                 <li>Laravel</li>
                 <li>Python</li>
                 <li>Django</li>
-                <li>Fundamentos de SQL</li>
+                <li data-lang="sql">Conceptos de SQL</li>
               </ul>
             </div>
           </article>
         </div>
       </div>
+
+      <!-- Background animation - source: https://freefrontend.com/css-animated-backgrounds/ -->
+      <div class="main-container__background">
+        <ul class="background__shapes">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </main>
 
     <footer class="footer">
-      <h3 class="footer__title --medium-text">
+      <h3 class="footer__title">
         <i>
           <span data-lang="made-by"> Hecho por: </span>
           Kevin Brian Flores Hernández

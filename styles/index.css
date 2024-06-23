@@ -2,10 +2,31 @@
 @import url("./layout/layout.css");
 @import url("./modules/slider-sections.css");
 @import url("./modules/aside-news.css");
+@import url("./modules/background.css");
 
 .main-container {
+  position: relative;
   display: flex;
   gap: 1rem;
   flex-grow: 1;
   width: 100%;
+}
+
+/* Media queries */
+@media (max-width: 1500px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 40%;
+  }
 }

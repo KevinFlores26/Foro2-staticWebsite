@@ -3,11 +3,12 @@
   flex-direction: column;
   gap: 3rem;
   width: 35rem;
-  background-color: var(--ng-color-text);
-  padding: 3rem 4rem; 
+  background-color: rgba(var(--rgb-ng-color-text), 0.5);
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
+  padding: 3rem 4rem;
   border-radius: 1rem 0 0 1rem;
-  box-shadow: -8rem 0 16rem -2rem var(--color-background);
-  z-index: 10;
+  z-index: 1;
 }
 
 .aside-news__news-articles {
@@ -21,7 +22,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center ;
+  align-items: center;
   gap: 5rem;
   width: 100%;
   background-color: var(--color-card-bg);
@@ -44,6 +45,7 @@
 
 .news-articles__article-card > img {
   width: 50%;
+  -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
